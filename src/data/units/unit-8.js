@@ -6,7 +6,21 @@ const unit8 = {
   title: "Unit 8 — (your title)",
   description: "Edit src/data/units/unit-8.js and drop PDFs in public/unit-8/",
 
-  books: [],
+  books: [ 
+      {
+      id: "u5-database-management",
+      title: "Overview of Database Management System",
+      subject: "Computer Science",
+      topics: [        
+        {
+          id: "u5-views-of-data",
+          title: "VIEWS OF DATA",
+          tags: ["VIEWS OF DATA"],
+          content: `
+`,
+        },
+      ]}
+      ],
   videos: [],
   pdfs: [],
 };

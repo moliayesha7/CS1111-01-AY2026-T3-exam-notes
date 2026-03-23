@@ -232,6 +232,14 @@ code. This is a remarkable achievement`,
     //   tags: ["Binary codes"],
     //   channel: "ALL ABOUT ELECTRONICS",
     // },
+    //  {
+    //   id: "u2-v-deadlock6",
+    //   title: "Number System Conversion Techniques |Very Easy|Fast |Decimal |Binary|Octal |Hexadecimal| ",
+    //   description: "Number System Conversion Techniques |Very Easy|Fast |Decimal |Binary|Octal |Hexadecimal| ",
+    //   url: "https://www.youtube.com/watch?v=E-Sg2YsvZds",
+    //   tags: ["Number System Conversion Techniques"],
+    //   channel: "Info Pack",
+    // },
   ],
 
   pdfs: [
