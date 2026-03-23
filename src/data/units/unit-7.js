@@ -382,19 +382,295 @@ phase is concentrated on requirements and on design of software.
 `,
         },
            {
-          id: "u7-programing-html-files",
-          title: "Programming Html Files",
-          tags: ["Programming Html Files"],
+          id: "u7-flowchart-and-algorithms",
+          title: "Flowcharting and Algorithms",
+          tags: ["Flowcharting and Algorithms"],
           content: `
+         A computer program is a sequential set of instructions written in a computer
+language that is used to direct the computer to perform a specific task of
+computation.
+Observe that the definition demands that any set of instructions must
+be such that the tasks will usually be performed sequentially unless directed
+otherwise. Each instruction in the set will express a unit of work that a computer language can support. In general, high level languages, also known as
+3GLs, support one human activity at a time. For example, if a computational
+task involves the determination of the average of three numbers, then it will
+require at least three human activities, viz., getting the numbers, obtaining
+the sum of the numbers, and then obtaining the average. The process will
+therefore require three instructions in a computer language. However, it can
+be done using two instructions, also: first by obtaining the numbers and second by obtaining the sum and the average.
+The objective of programming is to solve problems using computers
+quickly and accurately.
+A problem is something the result of which is not readily available. A set of
+steps involving arithmetic computation and/or logical manipulation is required
+to obtain the desired result. There is a law called the law of equifinality that
+states that the same goal can be achieved through different courses of action
+and a variety of paths, so the same result can be derived in a number of ways.
+For example, consider the task of sending a message to one of your friends.
+There are many ways in which this can be done. First, you can convey the
+message over the phone if your friend possesses a phone. Second, you can
+send it by post. Third, you can send it through a courier service. If the message is urgent, then you can try to use the quickest means for sending it. If
+it is not urgent, then you will choose to send it in the least expensive but
+most reliable way of doing it. Depending upon the urgency, you will decide
+the most effective way of doing it. This most effective way is called the optimum way. The different ways of solving a problem are called solution strategies. The optimum way of solving a problem to get the desired result can be
+achieved by analyzing different strategies for the solution and then selecting
+the way that can yield the result in the least time using the minimum amount
+of resources. The selection process will depend on the efficiency of the person
+and his/her understanding of the problem. He/she must also be familiar with
+different problem-solving techniques. Determining the set of steps required
+to solve a given problem is an art. It shows how well a person can arrange a
+set of steps so that others can follow it. A type of analysis called task analysis
+is required to reach the solution from a problem definition that states what is
+to be achieved.
+A set of steps that generates a finite sequence of elementary computational
+operations leading to the solution of a given problem is called an algorithm.
+An algorithm may be too verbose to follow. The textual description of an
+algorithm may not be understood quickly and easily. This is why a pictorial
+representation may be used as a substitute for an algorithm. Such a pictorial
+representation is called a flowchart. Formally speaking, a flowchart is a diagrammatic representation of the steps of an algorithm. In a flowchart, boxes
+of different shapes are used to denote different types of operations. These
+boxes are then connected by lines with arrows denoting the flow or direction
+to which one should proceed to know the next step. The connecting lines are
+known as flow lines. Flowcharts may be classified into two categories:
+(i) Program Flowchart (ii) System Flowchart
+Program flowcharts act like mirrors of computer programs in terms of
+flowcharting symbols. They contain the steps of solving a problem unit for a
+specific result.
+System flowcharts contain the solutions of many problem units together
+that are closely related to each other and interact with each other to achieve a
+goal. We will first focus on program flowcharts.
+A program flowchart is an extremely useful tool in program development.
+First, any error or omission can be more easily detected from a program flowchart than it can be from a program because a program flowchart is a pictorial
+representation of the logic of a program. Second, a program flowchart can be
+followed easily and quickly. Third, it serves as a type of documentation, which
+may be of great help if the need for program modification arises in future.
+The following five rules should be followed while creating program
+flowcharts.
+● Only the standard symbols should be used in program flowcharts.
+● The program logic should depict the flow from top to bottom and from
+left to right.
+● Each symbol used in a program flowchart should contain only one entry
+point and one exit point, with the exception of the decision symbol. This
+is known as the single rule.
+● The operations shown within a symbol of a program flowchart should be
+expressed independently of any particular programming language.
+● All decision branches should be well-labeled.
+The following are the standard symbols used in program flowcharts:
+Terminal: used to show the beginning and end of
+a set of computer-related processes
+Input/Output: used to show any input/output
+operation
+Computer processing: used to show any processing performed by a computer system
+Predefined processing: used to indicate any
+process not specially defined in the flowchart
+Comment: used to write any explanatory statement required to clarify something
+Flow line: used to connect the symbols
+Document Input/Output: used when input comes
+from a document and output goes to a document.
+Decision: used to show any point in the process
+where a decision must be made to determine
+further action
+On-page connector: used to connect parts of a
+flowchart continued on the same page
+Off-page connector: used to connect parts of a
+flowchart continued to separate pages
+Flowcharts can be used to show the sequence of steps for doing any job.
+A set of simple operations involving accepting inputs, performing arithmetic operation on the inputs, and showing them to the users demonstrate the
+sequence logic structure of a program. 
+
+`,
+        },
+         {
+          id: "u7-problems-involving-selection",
+          title: "Problems involving selection",
+          tags: ["Problems involving selection"],
+          content: `
+         This chapter deals with problems involving decision-making. This process of
+          decision-making is implemented through a logic structure called selection.
+          Here a predicate, also called a condition, is tested to see if it is true or false.
+          If it is true, a course of action is specified for it; if it is found to be false, an
+          alternative course of action is expressed. We can express this process using
+          flowchart notation.
+          Note that a course of action may involve one or more sequences of operations, 
+          and there should be a common meeting point to satisfy the single rule 
+          pointed to by the connector containing the word “Exit.” A flowchart may contain any number of decision boxes depending on the processing requirements,
+          and the boxes may appear in any sequence depending on the program logic
+          decided. For example, a number of decision boxes may follow one another. The
+          following flowcharts provide an explanation of the logic to clarify this concept
+          `,
+        },
+         {
+          id: "u7-problems-involving-looping",
+          title: "Problems involving looping",
+          tags: ["Problems involving looping"],
+          content: `In the flowcharts of the preceding chapter, we demonstrated the sequence and selection 
+          logic structures. We now move to the iteration logic structure. The term iteration means repetition. 
+          Sometimes, a procedure should be executed repeatedly. All procedures should be built so that they can 
+          be repeated as many times as needed. We should not develop procedures to execute only once. Otherwise, 
+          calculators could be sufficient to obtain the results. An iterative logic structure is also known as a loop . 
+          Looping means repeating a set of operations to obtain a result repeatedly. An iteration may be implemented in 
+          two ways: a pre-test iteration and post-test iteration. In case of a pre-test iteration , a predicate 
+          is tested to decide whether a set of operations is to be performed or not. If the condition implied by 
+          the predicate is true, then the desired operations are p ­ erformed. If it is false, then the iteration ­ is terminated. 
+          This is shown in the following ­ diagram.
+          For a post-test iteration, the predicate is tested after performing a set of operations once to decide whether 
+          to repeat the set of operations or to ­ terminate the repetition. If the condition happens to be true, then the set of 
+          operations is repeated; otherwise, it is not repeated. The diagrammatic ­ structure of this logic is as follows.
          
 `,
         },
          {
-          id: "u7-programing-html-files",
-          title: "Programming Html Files",
-          tags: ["Programming Html Files"],
-          content: `
-         
+          id: "u7-algorithimics ",
+          title: "algorithimics",
+          tags: ["algorithimics"],
+          content: `The algorithm is a fundamental notion to mathematics and informatics; it was created
+far before the invention of modern computers. Originally, an algorithm referred to a
+procedure of arithmetic operations on decimal numbers; later the same term began
+to be used to designate any series of actions that leads to a solution for a problem. In
+the field of informatics, an algorithm is understood to be the exact and finite list of
+instructions that defines the content and the order of enforcement actions, which are
+done by the executor on certain objects (source and in-between data sets) in order to
+obtain the expected result (final data sets).
+Any algorithm depends on the executor; the description of the algorithm is
+performed using the executor’s commands; objects which can be acted on by executor
+must belong to its environment, so that the input and output data of the algorithm
+must belong to the environment of a particular executor. The meaning of the word
+algorithm is similar to the meaning of words such as rule, method, technique or
+the way. In contrast to rule and methods, it is necessary that an algorithm have the
+following characteristics:
+– Discreteness (discontinuity). An algorithm consists of a limited number of finite
+actions (steps); only after finishing the current step, the executor can proceed
+to the next step. The executor identifies each successive action solely based on
+statements recorded in the algorithm; such instruction is called a command.
+– Determinacy. The way to solve the problem is unequivocally defined as a sequence
+of steps; this means that the algorithm used several times for the same input data
+will always result in the same set of output data.
+– Understandability. An algorithm should not contain ambiguous instructions and
+prescriptions; the executor should not undertake any independent decisions.
+– Effectiveness. If each step of an algorithm is executed precisely, the computation
+should be completed in a real time by delivering a solution to the problem; one
+possible solution is no result (an empty set of result data).
+– Mass character. An algorithm should work correctly for some types of problems
+(not for a single problem); an algorithm’s usefulness area includes a number of
+tasks belonging to the defined category of the problem.
+There is a fundamental difference between executing and developing algorithms. To
+execute an algorithm, you have to have an executor (a performing machine), for which
+the algorithm has been developed and saved. To develop the algorithm, you have to
+have a storage medium, onto which the contents of the algorithm can be saved. There
+are several indirect forms of describing the same algorithm; you can describe it:
+–– –– –– –– In text form, using a natural language or a specially defined algorithmic language; 
+In the graphic form, e.g. using a flow chart; In analytical form as a sequence of formulas; 
+In the form of a computer program, more precisely, in a programming language. 
+Regardless of the form of representation, algorithms can be translated into common 
+control and data structures provided by most high-level programming languages. 
+Different forms of presentation of algorithms are preferred to precisely analyze the 
+temporal and spatial requirements. Regardless of the form of description, 
+their structure comprises steps connected into serial-chained, branched or cyclic fragments. 
+Edsger W. Dijkstra has shown that these three structural units are the only ones needed to 
+write any algorithm. The science of algorithms (sometimes called algorithmics ) is 
+classified as a branch of computer science (in a historical perspective it was a branch of cybernetics) 
+and occurs as a sector in the majority of natural sciences, economics and technology. 
+The algorithmization or the art of building algorithms is called algorithm design ; 
+the result of algorithmization is a procedure (defined process), which solves efficiently a 
+class of problem. Also within the scope of algorithmics, there is the study of the difficulty 
+of solved problems; algorithmic complexity theory deals with this. A branch of algorithmics, 
+called algorithm analysis , studies the properties of solved problem.
+2.1.1 Algorithm Design From a practical point of view, an algorithm is a set of steps to be adopted
+ by the computer code to reach specific informational goals; it is based on the idea of a 
+ solution to a problem. Therefore, the development of algorithms is the most important structural 
+ component of programming; the algorithm should not depend on the syntax of programming languages and 
+ the specifics of a particular computer, to be reusable. One can say that a program is a specific 
+ implementation of an algorithm, when the algorithm is the idea of the program. In a certain sense, 
+ the creation of algorithms is not engineering, because this activity contains elements of art; nevertheless, 
+ there are several different engineering approaches for algorithm design [14]. Sometimes, this general 
+ approaches are called algorithmic paradigms ; they were formulated to constructing of efficient solutions 
+ to solving a broad range of diverse problems. Operational Approach Approaches and requirements for the 
+ development of algorithms have changed significantly during the evolution of computers. 
+During the first generations, when computer time was expensive, and their ability was modest in terms of today’s
+achievements, the basic requirement for algorithms was narrowly understood as their effectiveness. 
+The criteria were: –– Use the smallest number of memory cells when the program is executed; 
+–– Achieve minimum execution time or the minimum number of operations. In this case, 
+the processor has executed the program commands nearly directly; the most frequent commands 
+were an assignment statement, simple arithmetic operations, comparisons of numbers, 
+unconditional and conditional jumps, subroutine calls. Such an approach to the creation 
+of algorithms and to programming, focused on an operation directly executed by a computer 
+is called an operational approach . Let us consider the basic steps of algorithms that are 
+performed by a computer assuming the operational approach. An assignment statement copies the 
+value into a variable memory cell; this cell may belong to the main computer’s memory or be one of the 
+processor’s registers. After an assignment, specified value is stored in the memory cell, 
+where it is located until it will be replaced by another assignment. The memory cell, which houses the value, 
+is indicated in the computer program by a name (identifier). As the variables and their values can be of different types, 
+and values of these types are coded and represented in computer memory in different ways, they must match each other. 
+A set of simple arithmetic operations allows us to record arithmetic expressions using the numeric constants and variable names. 
+Comparison of numbers operations are actually reduced to the determination of the sign of the difference, 
+which is displayed by a special memory (flag of the result) of a computing device and can be used in the 
+performance of conditional jumps between the step of an algorithm. A conditional jump changes the order of 
+command execution depending on some condition, most often the conditions of a comparison of the numeric types. 
+In contrast, an unconditional jump changes the order of the commands independent from any conditions. 
+A subroutine call operation interrupt the normal order of execution steps and jumps into a separate sequence of program 
+instructions (steps) to perform a specific task; this separate sequence is called subroutine and is packaged as a unit of code.
+ The use of an operational approach provokes certain drawbacks in the resulting code; the misuse of conditional and 
+ unconditional transitions often leads to a confusing structure of the program. A large number of jumps in combination with 
+ treatments (to increase the efficiency of the code) lead to the fact that the code may become incomprehensible, 
+ very difficult to develop and to maintain. Structural Approach Since the mid-1960s, computer professionals have obtained a
+  deeper understanding of the role of subroutines as a means of abstraction and as units of code [15]. New programming languages 
+  have been developed to support a variety of mechanisms of parameter transmission. These have laid the foundation of structural 
+  and procedural programming . Structural programming is a software development methodology, based on the idea 
+  of program architecture as a hierarchical structure of units or blocks (this idea was formulated by Edsger W. 
+  Dijkstra and Niklaus Wirth). This new programming paradigm was able to: –– Provide the programming discipline 
+  that programmers impose themselves in the process of developing of software; –– Improve the understandability of programs;
+   –– Increase the effectiveness of programs; –– Improve the reliability of programs; –– Reduce the time and cost of software 
+   elaboration. The structural approach methodology enabled the development of large and complex software systems. 
+   At the same time, it gave birth to structure mechanisms for algorithms and program codes, and a control mechanism 
+   for proving the correctness of calculations. A routines mechanism was implemented in form of procedures and functions, 
+   which are powerful programming tools. There are four basic principles of structural methodology: 
+   1. Formalization of the development process guarantees the adherence to a strict methodological approach; 
+   usually, programming should be engineering, not art. 2. The hierarchy of levels of abstraction requires building an 
+   algorithm divided into units, which differ in the degree of detail and approximation to the problem being solved. 
+   3. In accordance with the maxim “ Divide and conquer ”, the splitting of a whole problem into separate sub-problems, 
+   allowing the independent creation of smaller algorithms is a method for complex projects. The fragments of solution code 
+   can be compiling, debugging and testing separate as well. 4. The hierarchical ordering (hierarchical structuring) 
+   should cover relationships between units and modules of software package; this means respect for the hierarchical 
+   approach up to the largest modules of the software system. A structural approach can be applied step by step,
+    detailing of parts of an algorithm, until they are quite simple and easily programmable. Another way is the developing 
+    of lower-level units, and further combining them into units with higher levels of abstraction. In practice, 
+    both methods are used. Modular Approach In computer programming, a module is a set of related subroutines together 
+    with the data that these subroutines are treated. The terminology of different programming paradigms may provide 
+    another name for subroutine; it may be called a subprogram, a routine, a procedure, a function or a method. Gradually, 
+    software engineers formed the concept of a module as a mechanism of abstraction; 
+  a dedicated syntax was developed for modules to be used on par with subprograms. The construction of modules hides
+  programming . Structural programming is a software development methodology, based on the idea of program 
+  architecture as a hierarchical structure of units or blocks (this idea was formulated by Edsger W. Dijkstra and 
+  Niklaus Wirth). This new programming paradigm was able to: –– Provide the programming discipline that programmers 
+  impose themselves in the process of developing of software; –– Improve the understandability of programs; 
+  –– Increase the effectiveness of programs; –– Improve the reliability of programs; 
+  –– Reduce the time and cost of software elaboration. The structural approach methodology 
+  enabled the development of large and complex software systems. At the same time, it gave birth to 
+  structure mechanisms for algorithms and program codes, and a control mechanism for proving the correctness 
+  of calculations. A routines mechanism was implemented in form of procedures and functions, which are powerful 
+  programming tools. There are four basic principles of structural methodology: 1. Formalization of the development 
+  process guarantees the adherence to a strict methodological approach; usually, programming should be engineering, not art. 
+  2. The hierarchy of levels of abstraction requires building an algorithm divided into units, which differ in the degree of
+   detail and approximation to the problem being solved. 3. In accordance with the maxim “ Divide and conquer ”, 
+   the splitting of a whole problem into separate sub-problems, allowing the independent creation of smaller algorithms is a 
+   method for complex projects. The fragments of solution code can be compiling, debugging and testing separate as well.
+    4. The hierarchical ordering (hierarchical structuring) should cover relationships between units and modules of 
+    software package; this means respect for the hierarchical approach up to the largest modules of the software system. 
+    A structural approach can be applied step by step, detailing of parts of an algorithm, until they are quite simple 
+    and easily programmable. Another way is the developing of lower-level units, and further combining them into units 
+    with higher levels of abstraction. In practice, both methods are used. Modular Approach In computer programming, 
+    a module is a set of related subroutines together with the data that these subroutines are treated. 
+    The terminology of different programming paradigms may provide another name for subroutine; it may be called a subprogram, 
+    a routine, a procedure, a function or a method. Gradually, software engineers formed the concept of 
+    a module as a mechanism of abstraction; 
+  a dedicated syntax was developed for modules to be used on par with subprograms. The construction of modules hides
+`,
+        },
+         {
+          id: "u7-html1",
+          title: "HTML",
+          tags: ["HTML"],
+          content: `Nduta, A. (2023, January 25). What is debugging? A simple guide for beginners. 
+          CareerFoundry. https://careerfoundry.com/en/blog/web-development/what-is-debugging/ 
 `,
         },
       ]}
@@ -402,11 +678,51 @@ phase is concentrated on requirements and on design of software.
   videos: [
      {
       id: "u7-v-deadlock1",
-      title: "What is firewall? | Firewall explained | Firewalls and network security",
-      description: "What is firewall? | Firewall explained | Firewalls and network security",
-      url: "https://www.youtube.com/watch?v=9GZlVOafYTg",
-      tags: ["What is firewall? | Firewall explained | Firewalls and network security"],
+      title: "Programming Paradigms | Functional Programming | Object Oriented Programming | Logic | java world [Video].",
+      description: "Programming Paradigms | Functional Programming | Object Oriented Programming | Logic | java world [Video].",
+      url: "https://www.youtube.com/watch?v=ySBTM-FKEtg",
+      tags: ["Programming Paradigms | Functional Programming | Object Oriented Programming | Logic | java world [Video]."],
+      channel: "Java World",
+    },
+    {
+      id: "u7-v-deadlock2",
+      title: "Problem solving in Programming | Problem solving skills for programming",
+      description: "Problem solving in Programming | Problem solving skills for programming",
+      url: "https://www.youtube.com/watch?v=-c5XAmA5Oc4",
+      tags: ["Problem solving in Programming | Problem solving skills for programming"],
       channel: "Simplilearn",
+    },
+     {
+      id: "u7-v-deadlock3",
+      title: "September 10). Systems Development Life Cycle (Planning, Analysis, Design and Implementation)",
+      description: "September 10). Systems Development Life Cycle (Planning, Analysis, Design and Implementation)",
+      url: "https://www.youtube.com/watch?v=pdaeQKC57_g",
+      tags: ["September 10). Systems Development Life Cycle (Planning, Analysis, Design and Implementation)"],
+      channel: "Charles Severance",
+    },
+      {
+      id: "u7-v-deadlock4",
+      title: "August 16). What is an algorithm? | What exactly is algorithm? | Algorithm Basics explained | SimpliLearn",
+      description: "August 16). What is an algorithm? | What exactly is algorithm? | Algorithm Basics explained | SimpliLearn",
+      url: "https://www.youtube.com/watch?v=cuhLSGGV-1k",
+      tags: ["August 16). What is an algorithm? | What exactly is algorithm? | Algorithm Basics explained | SimpliLearn"],
+      channel: "Simplilearn",
+    },
+      {
+      id: "u7-v-deadlock5",
+      title: "Control Structures - Sequence, Selection & Iteration Explained",
+      description: "Control Structures - Sequence, Selection & Iteration Explained",
+      url: "https://www.youtube.com/watch?v=Yw2Rxa6gfVg",
+      tags: ["Control Structures - Sequence, Selection & Iteration Explained"],
+      channel: "Computer Science Tutor",
+    },
+     {
+      id: "u7-v-deadlock6",
+      title: "Errors in Programs Part 1 - Types of Errors & Debugging Tips",
+      description: "Errors in Programs Part 1 - Types of Errors & Debugging Tips",
+      url: "https://www.youtube.com/watch?v=4kYtCVneais",
+      tags: ["Errors in Programs Part 1 - Types of Errors & Debugging Tips",],
+      channel: "Computer Science Tutor",
     },
   ],
   pdfs: [
@@ -432,11 +748,39 @@ phase is concentrated on requirements and on design of software.
       file: "/unit-7/Insight_into_Theoretical_and_.pdf",
     },
      {
-      id: "u7-pdf-slides3",
+      id: "u7-pdf-slides4",
       title: "Unit 7 — Flowchart_and_Algorithm_Basics_The_Art_of_",
       description:
         "Flowchart_and_Algorithm_Basics_The_Art_of_",
       file: "/unit-7/Flowchart_and_Algorithm_Basics_The_Art_of_.pdf",
+    },
+    {
+      id: "u7-pdf-slides5",
+      title: "Unit 7 — Flowchart_and_Algorithm_Basics_The_Art_of_Prog",
+      description:
+        "Flowchart_and_Algorithm_Basics_The_Art_of_Prog",
+      file: "/unit-7/Flowchart_and_Algorithm_Basics_The_Art_of_Prog.pdf",
+    },
+     {
+      id: "u7-pdf-slides6",
+      title: "Unit 7 — Flowchart and Algorithm Basics A. B. Chaudhuri-Full Book",
+      description:
+        "Flowchart and Algorithm Basics A. B. Chaudhuri",
+      file: "/unit-7/Flowchart and Algorithm Basics A. B. Chaudhuri.pdf",
+    }, 
+    {
+      id: "u7-pdf-slides7",
+      title: "Unit 7 — Insight_into_Theoretical_and_Applied_Informatics_I..._----_(2_Algorithmics)",
+      description:
+        "Insight_into_Theoretical_and_Applied_Informatics_I..._----_(2_Algorithmics)",
+      file: "/unit-7/Insight_into_Theoretical_and_Applied_Informatics_I..._----_(2_Algorithmics).pdf",
+    },
+    {
+      id: "u7-pdf-slides8",
+      title: "Unit 7 — Insight into theoretical and applied informatics-Algorithimics",
+      description:
+        "Insight into theoretical and applied informatics-Algorithimics",
+      file: "/unit-7/Insight into theoretical and applied informatics-Algorithimics.pdf",
     },
   ],
 };
