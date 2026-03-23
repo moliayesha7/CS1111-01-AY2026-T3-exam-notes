@@ -9,6 +9,7 @@ import {
   countVideosInUnits,
   countPdfsInUnits,
 } from "@/lib/searchNotes";
+import ContentDisplay from "@/components/ContentDisplay"; 
 
 function HighlightText({ text, query }) {
   const q = query.trim();
@@ -413,6 +414,7 @@ export default function StudyHub() {
                                     ) : null}
                                     <div className="whitespace-pre-wrap text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
                                       {topic.content}
+                                      
                                     </div>
                                   </div>
                                 ) : null}
@@ -496,7 +498,7 @@ export default function StudyHub() {
             onClick={() => setOpenTopicId(null)}
           >
             <div
-              className="max-h-[85vh] w-full max-w-lg overflow-y-auto rounded-2xl bg-white p-6 shadow-xl dark:bg-zinc-900"
+              className="max-h-[95vh] w-full max-w-4xl overflow-y-auto rounded-2xl bg-white p-6 shadow-xl dark:bg-zinc-900"
               onClick={(e) => e.stopPropagation()}
               role="document"
             >
